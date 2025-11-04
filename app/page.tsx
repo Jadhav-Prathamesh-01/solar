@@ -51,16 +51,16 @@ export default function Home() {
           </h2>
           
           {/* Content Section */}
-          <div className="flex items-start justify-between">
-            {/* Left - Ground mount title */}
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+            {/* Ground mount title */}
             <div className="flex-shrink-0">
               <h3 className="text-black text-2xl font-semibold">
                 Ground mount
               </h3>
             </div>
             
-            {/* Right - Description */}
-            <div className="max-w-md ml-auto">
+            {/* Description */}
+            <div className="max-w-md md:ml-auto">
               <p className="text-gray-600 text-base leading-relaxed text-justify">
                 Our ground mount solar solutions are the perfect way to utilize that parcel of unused land. The structure is installed either using helical or concrete piles. They are designed to withstand the harshest wind, hail and snow.
               </p>
@@ -163,6 +163,51 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* About Us Section */}
+      <div className="w-full bg-white py-16 px-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Continuous Line - Straight (low), Slant Up, Straight (high) */}
+          <div className="relative mb-16 h-8">
+            <svg className="w-full h-full" viewBox="0 0 1200 32" preserveAspectRatio="none">
+              <path 
+                d="M0,24 L900,24 L930,12 L1200,12" 
+                stroke="#d1d5db" 
+                strokeWidth="1" 
+                fill="none"
+              />
+            </svg>
+          </div>
+
+          {/* About Us Content */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+            {/* About Us heading */}
+            <div className="flex-shrink-0">
+              <h2 className="text-black text-7xl md:text-8xl lg:text-9xl font-bold">
+                About Us
+              </h2>
+            </div>
+            
+            {/* Description */}
+            <div className="max-w-md md:ml-auto">
+              <p className="text-black text-base leading-relaxed text-justify">
+                Inspired by the legacy of our legendary namesake, we harness the power of human ingenuity and resolve to build the future of energy and digital infrastructure.
+              </p>
+            </div>
+          </div>
+
+          {/* About Image */}
+          <div className="w-full">
+            <Image
+              src="/about.webp"
+              alt="About us - Team meeting"
+              width={1200}
+              height={600}
+              className="w-full h-auto object-cover rounded-lg"
+            />
           </div>
         </div>
       </div>
